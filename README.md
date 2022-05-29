@@ -32,7 +32,7 @@ Response:
 * We set up a custom server for you
 * You send a request to our setup API with your bet365 account so the bot can login
 * You send bet details to our placebet API
-* The bet will be placed via our undetected custom browser automation solution
+* The bet will be placed with our undetected custom browser automation solution
 * The result of the placebet request will be returned to you
 
 ### How to get access:
