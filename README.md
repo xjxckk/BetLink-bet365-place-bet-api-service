@@ -9,19 +9,26 @@ We offer a third party API service for bet365 that supports placing bets
 * Place undetected bets on inplay events
 
 ### Sample usage (Python):
-Request:
+Setup endpoint request:
 ```python
 import requests
 
-placebet_server_url = 'http://3.8.91.128:555' # Sample server to send test requests to
+betlink_sample_server = 'http://3.8.91.128:555' # Sample server to send test requests to
 
 login_details = {
     'username': 'your_bet365_username',
     'password': 'your_bet365_password'
     }
 
-response = requests.post(placebet_server_url + '/setup', json=login_details)
+response = requests.post(betlink_sample_server + '/setup', json=login_details)
+```
+Live server response:
+```python
+{'logged_in': True}
+```
 
+Place bet endpoint request:
+```python
 bet_details = {
   'home': 'Reilly Opelka',
   'away': 'Oscar Otte',
@@ -29,13 +36,9 @@ bet_details = {
   'Selection': 'Reilly Opelka'
   }
 
-response = requests.post(placebet_server_url + '/bet', json=bet_details)
+response = requests.post(betlink_sample_server + '/bet', json=bet_details)
 ```
-Setup call response:
-```python
-{'logged_in': True}
-```
-Bet call response:
+Live server response:
 ```python
 {'place_bet_result': 'Bet Placed'}
 ```
