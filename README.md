@@ -33,7 +33,8 @@ bet_details = {
   'home': 'Reilly Opelka',
   'away': 'Oscar Otte',
   'market': '14th Game Winner',
-  'Selection': 'Reilly Opelka'
+  'selection': 'Reilly Opelka',
+  'stake': '0.10'
   }
 
 response = requests.post(betlink_sample_server + '/bet', json=bet_details)
