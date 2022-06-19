@@ -1,7 +1,7 @@
-### BetLink: bet365 place bet API service
+### [BetLink: bet365 place bet API service](https://betlink.ml/)
 We offer a third party API service for bet365 that supports placing bets
 
-![bet365 place bet API service](https://github.com/xjxckk/bet365-place-bet-api-service/blob/master/Placebet.gif)
+[![bet365 place bet API service](https://github.com/xjxckk/bet365-place-bet-api-service/blob/master/Placebet.gif)](https://betlink.ml/)
 
 ### Features:
 * Login with your bet365 account
