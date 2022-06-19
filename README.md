@@ -13,7 +13,7 @@ Setup endpoint request:
 ```python
 import requests
 
-betlink_sample_server = 'http://3.8.91.128:555' # Sample server to send test requests to
+betlink_sample_server = 'https://api.betlink.ml/sample' # Sample server to send test requests to
 
 login_details = {
     'username': 'your_bet365_username',
@@ -52,6 +52,6 @@ Live server response:
 * The result of the placebet request will be returned to you
 
 ### How to get access:
-Contact me on Telegram: @xJxckk
+Contact me on Telegram: [@xJxckk](https://t.me/xJxckk)
 
 Message me on Discord: jx#2099
