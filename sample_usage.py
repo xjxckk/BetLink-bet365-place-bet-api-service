@@ -1,6 +1,6 @@
 import requests
 
-betlink_sample_server = 'https://api.betlink.ml/sample' # Sample server to send test requests to
+betlink_sample_server = 'http://api.betlink.ml/sample' # Sample server to send test requests to
 
 login_details = {
     'username': 'your_bet365_username',
