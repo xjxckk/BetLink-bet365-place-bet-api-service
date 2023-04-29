@@ -56,6 +56,4 @@ Go to our website: [https://betlink.ml](https://betlink.ml)
 
 Contact us on Telegram: [@xJxckk](https://t.me/xJxckk)
 
-Message us on Discord: jx#2099
-
 We also offer odds data and custom betting bot development.
