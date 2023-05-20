@@ -27,7 +27,7 @@ response = requests.post(betlink_sample_server + '/setup', json=login_details)
 
 Live server response:
 ```python
-{'logged_in': True}
+{'Saved': True}
 ```
 
 Place bet endpoint request:
