@@ -14,14 +14,17 @@ Setup endpoint request:
 import requests
 
 betlink_sample_server = 'https://api.betlink.ml/sample' # Sample server to send test requests to
+api_key = 'SAMPLE-API-KEY'
 
 login_details = {
     'username': 'your_bet365_username',
-    'password': 'your_bet365_password'
+    'password': 'your_bet365_password',
+    'api_key': api_key
     }
 
 response = requests.post(betlink_sample_server + '/setup', json=login_details)
 ```
+
 Live server response:
 ```python
 {'logged_in': True}
@@ -30,18 +33,51 @@ Live server response:
 Place bet endpoint request:
 ```python
 bet_details = {
-  'home': 'Reilly Opelka',
-  'away': 'Oscar Otte',
-  'market': '14th Game Winner',
-  'selection': 'Reilly Opelka',
-  'stake': '0.10'
-  }
+    'match_link': 'https://www.bet365.com/#/AC/B1/C1/D8/E137535717/F3/I0/',
+    'market': 'Double Chance',
+    'selection': 'Draw or Tunisia U20',
+    'stake': '1.00',
+    'api_key': api_key
+    }
 
 response = requests.post(betlink_sample_server + '/bet', json=bet_details)
 ```
+
 Live server response:
 ```python
-{'place_bet_result': 'Bet Placed'}
+{
+    'Received': True,
+    'BetID': '268d1e51-d62d-41b5-8a0a-2fa9f580d0c4'
+}
+```
+
+Getting placer result
+```python
+bet_id = response['BetID']
+
+placed_bet = {
+    'BetID': bet_id,
+    'api_key': api_key
+    }
+
+sleep(5)
+for poll_check in range(30):
+    response = requests.post(server_ip + '/bet-result', json=placed_bet)
+    print('Status code:', response)
+    print('Response data:', response.json())
+```
+
+Bet still placing:
+```python
+{'Error': "Bet ID: '268d1e51-d62d-41b5-8a0a-2fa9f580d0c4' not yet placed"}
+```
+
+Live server response where bet was placed:
+```python
+{
+    'PlacerResult': 'Bet placed',
+    'BetID': '268d1e51-d62d-41b5-8a0a-2fa9f580d0c4'
+}
 ```
 
 ### How it works
