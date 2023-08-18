@@ -120,6 +120,6 @@ Live server response where bet was placed:
 ### How to get access:
 Go to our website: [https://betlink.ml](https://betlink.ml)
 
-Contact us on Telegram: [@xJxckk](https://t.me/xJxckk)
+Contact us on Telegram: [@BetLinkSupport](https://t.me/BetLinkSupport)
 
 We also offer odds data and custom betting bot development.
