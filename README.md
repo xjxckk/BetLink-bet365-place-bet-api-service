@@ -1,7 +1,7 @@
-### [BetLink: bet365 place bet API service](https://betlink.ml)
+### BetLink: bet365 place bet API service
 We offer a third party API service for bet365 that supports placing bets for £97 per month
 
-[![bet365 place bet API service](https://github.com/xjxckk/bet365-place-bet-api-service/blob/master/Placebet.gif)](https://betlink.ml)
+![bet365 place bet API service](https://github.com/xjxckk/bet365-place-bet-api-service/blob/master/Placebet.gif)
 
 ### Features:
 * Login with your bet365 account
@@ -118,8 +118,6 @@ Live server response where bet was placed:
 * The result of the placebet request will be returned to you
 
 ### How to get access:
-Go to our website: [https://betlink.ml](https://betlink.ml)
-
 Contact us on Telegram: [@BetLinkSupport](https://t.me/BetLinkSupport)
 
 We also offer odds data and custom betting bot development.
