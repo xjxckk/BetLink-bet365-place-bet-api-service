@@ -1,5 +1,5 @@
 ### BetLink: bet365 place bet API service
-We offer a third party API service for bet365 that supports placing bets for £97 per month
+We offer a third party API service for bet365 that supports placing bets.
 
 ![bet365 place bet API service](https://github.com/xjxckk/bet365-place-bet-api-service/blob/master/Placebet.gif)
 
