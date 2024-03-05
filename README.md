@@ -118,6 +118,6 @@ Live server response where bet was placed:
 * The result of the placebet request will be returned to you
 
 ### How to get access:
-Contact us on Telegram: [@BetLinkSupport](https://t.me/BetLinkSupport)
+Contact us on Telegram: [@BetLink_org](https://t.me/BetLink_org)
 
 We also offer odds data and custom betting bot development.
